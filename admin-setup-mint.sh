@@ -10,13 +10,13 @@ sudo apt update;
 yes | sudo apt upgrade;
 
 #install google chrome
-flatpak install flathub com.google.Chrome;
+flatpak install flathub com.google.Chrome -y;
 
 #install Discord
-flatpak install flathub com.discordapp.Discord;
+flatpak install flathub com.discordapp.Discord -y;
 
 #install Zoom
-flatpak install flathub us.zoom.Zoom;
+flatpak install flathub us.zoom.Zoom -y;
 
 #enable auto updates and ensure that they happen
 #yes | sudo apt install crontab
