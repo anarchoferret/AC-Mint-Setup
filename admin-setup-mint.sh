@@ -2,6 +2,7 @@
 
 #Run this script to set up a new ubuntu computer for the Math Outreach Center.
 #written by: Joshua Allen
+#Modified by Skylar Preston (AnarchoFerret)
 # run with the command:  ./setup.sh
 
 #first update
@@ -9,16 +10,13 @@ sudo apt update;
 yes | sudo apt upgrade;
 
 #install google chrome
-sudo wget -O ~/Downloads/chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb";
-sudo gdebi ~/Downloads/chrome.deb;
+flatpak install flathub com.google.Chrome;
 
 #install Discord
-sudo wget -O ~/Downloads/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb";
-sudo gdebi ~/Downloads/discord.deb;
+flatpak install flathub com.discordapp.Discord;
 
 #install Zoom
-sudo wget -O ~/Downloads/zoom.deb "https://zoom.us/client/latest/zoom_amd64.deb";
-sudo gdebi ~/Downloads/zoom.deb;
+flatpak install flathub us.zoom.Zoom;
 
 #enable auto updates and ensure that they happen
 #yes | sudo apt install crontab
@@ -98,4 +96,4 @@ gsettings set org.cinnamon.settings-daemon.plugins.power sleep-inactive-battery-
 
 #Clean up
 #Remove google chrome deb file from the directory that ran the program
-rm -f ./google*.deb
+#rm -f ./google*.deb
