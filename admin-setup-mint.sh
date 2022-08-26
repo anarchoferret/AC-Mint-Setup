@@ -8,6 +8,7 @@
 #first update
 sudo apt update;
 yes | sudo apt upgrade;
+flatpak update -y;
 
 #install google chrome
 flatpak install flathub com.google.Chrome -y;
