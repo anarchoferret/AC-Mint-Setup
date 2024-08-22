@@ -10,6 +10,10 @@ sudo apt update;
 yes | sudo apt upgrade;
 flatpak update -y;
 
+#Remove deb Firefox (It's slow)
+sudo apt remove firefox -y
+flatpak install flathub org.mozilla.firefox
+
 #install google chrome
 flatpak install flathub com.google.Chrome -y;
 
@@ -48,16 +52,16 @@ gsettings set org.cinnamon.desktop.interface clock-use-24h false;
 
 #Desktop settings
 #Add Firefox and Google Chrome desktop icons
-FILE=firefox.desktop
-if [ -e /usr/share/applications/$FILE ]; then
-    cp /usr/share/applications/$FILE ~/Desktop
-    chmod 711 ~/Desktop/$FILE
-fi
-FILE=google-chrome.desktop
-if [ -e /usr/share/applications/$FILE ]; then
-    cp /usr/share/applications/$FILE ~/Desktop
-    chmod 711 ~/Desktop/$FILE
-fi
+#FILE=firefox.desktop
+#if [ -e /usr/share/applications/$FILE ]; then
+#    cp /usr/share/applications/$FILE ~/Desktop
+#    chmod 711 ~/Desktop/$FILE
+#fi
+#FILE=google-chrome.desktop
+#if [ -e /usr/share/applications/$FILE ]; then
+#    cp /usr/share/applications/$FILE ~/Desktop
+#    chmod 711 ~/Desktop/$FILE
+#fi
 
 gsettings set org.cinnamon.desktop.interface gtk-theme Mint-Y-Red
 gsettings set org.cinnamon.desktop.interface icon-theme Mint-Y-Dark-Sand
