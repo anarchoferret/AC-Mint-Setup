@@ -12,7 +12,7 @@ flatpak update -y;
 
 #Remove deb Firefox (It's slow)
 sudo apt remove firefox -y
-flatpak install flathub org.mozilla.firefox
+flatpak install flathub org.mozilla.firefox -y
 
 #install google chrome
 flatpak install flathub com.google.Chrome -y;
