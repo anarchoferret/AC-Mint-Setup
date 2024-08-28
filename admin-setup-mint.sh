@@ -64,7 +64,7 @@ gsettings set org.cinnamon.desktop.interface clock-use-24h false;
 #fi
 
 gsettings set org.cinnamon.desktop.interface gtk-theme Mint-Y-Red
-gsettings set org.cinnamon.desktop.interface icon-theme Mint-Y-Dark-Sand
+gsettings set org.cinnamon.desktop.interface icon-theme Mint-Y-Sand
 gsettings set org.cinnamon.theme name Mint-Y-Dark
 
 #Set Natural scrolling
